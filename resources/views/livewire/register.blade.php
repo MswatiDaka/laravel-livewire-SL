@@ -32,8 +32,8 @@
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
-                    <input type="submit" value="Register"
-                        class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer" />
+                    <button wire:click="submit"
+                        class="p-2 bg-gray-800 text-white w-full rounded tracking-wider cursor-pointer">Register</button>
                 </div>
             </div>
         </form>

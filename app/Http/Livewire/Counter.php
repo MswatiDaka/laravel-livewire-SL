@@ -15,15 +15,15 @@ class Counter extends Component
 
     public function addItem()
     {
-        dd('added');
+        dd($this->newItem);
         // $this->validate(['newItem' => 'required|max:255']);
         // $this->newItem='';
     }
     public function remove($itemId)
     {
         dd('removed');
-        $newItem = cart::find($itemId);
-        $newItem->delete();
+        // $newItem = cart::find($itemId);
+        // $newItem->delete();
         session()->flash('message', 'item deleted successfully');
     }
 }
